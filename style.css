@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans';
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header{
+    background-color: #fafafa;
+}
+nav .container{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.links{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.links a{
+    text-decoration: none;
+    color: #232730;
+    font-size: 16px;
+    font-weight: 400;
+    /* font-family: 'Playfair Display'; */
+}
