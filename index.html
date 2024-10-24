@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>LuxChaffeur</title>
 </head>
 <body>
@@ -23,7 +24,7 @@
                 </ul>
             </div>
         </nav>
-        <div class="hero">
+        <div class="hero" id="home">
             <div  class="container">
                 <!-- This is Hero -->
                 <div class="hero-text">
@@ -44,7 +45,7 @@
     </header>
 
     <main>
-        <section class="section1">
+        <section class="section1" id="about">
             <div class="container">
                 <div class="sct1-img">
                     <img src="img/sct1.png" alt="">
@@ -60,7 +61,7 @@
             </div>
         </section>
 
-        <section class="section2">
+        <section class="section2" id="service">
             <div class="container">
                 <div class="sct2-title">
                     <h1>Services</h1>
@@ -99,9 +100,10 @@
                     </div>
                 
             </div>
+            <div class="dot" id="fleet"></div>
         </section>
 
-        <section class="section3">
+        <section class="section3" >
             <div class="container">
                 <div class="sct3-title">
                     <h1>Fleet</h1>
@@ -202,31 +204,86 @@
                         <h2>Annie Rudy</h2>
                         <p>Las vegas</p>
                     </div>
-                    <div class="coment-text">
+                    <div class="comment-text">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis dui nec massa enim scelerisque scelerisque maecenas lectus. Tincidunt posuere nunc at amet, in. Enim ullamcorper lectus viverra donec. At faucibus nunc vel viverra massa malesuada leo iaculis tellus.
                         </p>
                         <img src="img/stars.svg" alt="">
                     </div>
+                </div>
+                <div class="dots2">
+                    <img src="img/dots2.svg" alt="">
                 </div>
             </div>
         </section>
 
         <section class="section6">
             <div class="container">
-                
+                <p class="sct6-info">
+                    We offer the best you can imagine
+                </p>
+                <h1 class="sct6-title">Call Now for booking 01477 678905 </h1>
             </div>
         </section>
 
-        <section class="section7">
+        <section class="section7" id="contact">
             <div class="container">
-                
+                <div class="sct3-title sct7">
+                    <h1>Contact</h1>
+                </div>
+                <div class="contact">
+                    <form>
+                        <input type="text" class="name" placeholder="Your Name">
+                        <input type="email" class="email" placeholder="Email">
+                        <select name="car-type" id="">
+                            <option value="fclass" disabled selected><p>Type of Car</p></option>
+                            <option value="fclass">First Class</option>
+                            <option value="fclass">BUSINESS CLASS</option>
+                            <option value="fclass">SUV</option>
+                        </select>
+                        <textarea name="textarea" id="" cols="30" rows="10" placeholder="Your Details"></textarea>
+                        <button class="contact-btn">SEND</button>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="container">
-
+            <div class="about-we">
+                <div class="foot-logo">
+                    <img src="img/logo.svg" alt="">
+                </div>
+                <p class="foot-info">
+                    We are known for luxurious and premium chaffeur services worldwide. We are simply the best you can find.
+                </p>
+                <p class="foot-info">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem consectetur sagittis auctor. 
+                </p>
+            </div>
+            <div class="letters">
+                <h1>News Letter</h1>
+                <p>Subscribe to our news letter for updates, news and exclusive offers</p>
+                <div class="subscribe">
+                    <form>
+                        <input type="email" placeholder="Email">
+                        <button class="foot-btn">Subscribe</button>
+                    </form>
+                </div>
+                <div class="socials">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+            <div class="contact-me">
+                <h1>Contact</h1>
+                <div class="foot-data"><i class="fa-solid fa-location-dot"></i><p>2038 2nd Avenue, <br> Las Vegas, United States</p></div>
+                <div class="foot-data"><i class="fa-solid fa-phone"></i><p>01477 342123 <br>
+                    01477 678905</p></div>
+                <div class="foot-data"><i class="fa-solid fa-envelope"></i><p>info@luxchauffeur.com</p></div>
+            </div>
+            <div class="hr"></div>
         </div>
     </footer>
 </body>

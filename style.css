@@ -4,6 +4,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Nunito Sans';
+    transition: all .5s ease;
+    scroll-behavior: smooth;
 }
 .container{
     max-width: 1200px;
@@ -15,23 +17,34 @@ body{
 header{
     background-color: #fafafa;
 }
+nav{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    /* left: 220px; */
+    z-index: 999;
+}
 nav .container{
     padding: 20px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 .links{
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 40px;
 }
 .links a{
     text-decoration: none;
     color: #232730;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
+}
+.links a:hover{
+    color: #A55C30;
 }
 
 /* Styling hero section */
@@ -86,6 +99,10 @@ nav .container{
     gap: 100px;
     padding-bottom: 80px;
 }
+.sct1-img{
+    object-fit: contain;
+    overflow: hidden;
+}
 .sct1-img img{
     width: 90%;
 }
@@ -111,6 +128,8 @@ nav .container{
 
 .section2{
     background-color: #000;
+    position: relative;
+
 }
 .section2 .container{
     color: white;
@@ -120,6 +139,10 @@ nav .container{
     background-size: 100%;
     background-repeat: no-repeat;
     padding-bottom: 50px;
+}
+.dot{
+    position: absolute;
+    bottom: 30px;
 }
 .sct2-title{
     display: flex;
@@ -147,6 +170,15 @@ nav .container{
     justify-content: center;
     align-items: center;
     padding-bottom: 40px;
+}
+.box-img:hover{
+    transform: scale(1.07);
+}
+ .box3-img:hover{
+    transform: scale(1.07);
+}
+.sct2-box:hover{
+    color: #F8D7A4;
 }
 .box-text h3{
     padding-bottom: 20px;
@@ -193,6 +225,9 @@ nav .container{
     padding: 20px;
     box-shadow: 10px 10px 10px 10px #f2f2f2;
 
+}
+.sct3-box:hover{
+    transform: scale(.97);
 }
 .box3-img{
     display: flex;
@@ -263,6 +298,10 @@ nav .container{
     flex-direction: column;
     align-items: center;
 }
+.sct4-box:hover{
+    color: #A55C30;
+    transform: scale(1.06);
+}
 .sct4-box h1{
     font-size: 72px;
     font-weight: 600;
@@ -277,11 +316,237 @@ nav .container{
 .section5{
     background-color: #f8d7a4;
 }
-.comment{
-    background-color: #fff;
-    padding: 30px 60px;
-    
-}
 .sct5{
     padding-top: 80px;
+}
+.section5 .container{
+    padding-bottom: 80px;
+}
+.comment{
+    background-color: #fff;
+    display: flex;
+    /* align-items: center; */
+    gap: 140px;
+    padding: 60px 100px;
+}
+button:hover{
+    opacity: .8;
+}
+.women{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.women h2{
+    font-size: 32px;
+    line-height: 37px;
+    font-weight: 700;
+}
+.women p{
+    font-size: 24px;
+    line-height: 37px;
+    font-weight: 400;
+    color: #979797;
+    font-style: italic;
+}
+.women img{
+    margin-bottom: 20px;
+}
+.comment-text{
+    width: 620px;
+    text-align: center;
+}
+.comment-text p{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 40px;
+}
+.dots2{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+/* Styling section6 */
+
+.section6{
+    background-image: url('img/sct-back.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.section6 .container{
+    padding: 80px 0;
+    color: white;
+    text-align: center;
+}
+.sct6-info{
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 43px;
+    padding-bottom: 10px;
+}
+.sct6-title{
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 67px;
+}
+
+/* Styling section 7 */
+
+.section7 .container{
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 60px;
+
+}
+.contact{
+    background-color: #e8eaec;
+    padding-top: 110px;
+    padding-bottom: 50px;
+    width: 600px;
+}
+.section7 form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+input, select{
+    width: 350px;
+    height: 40px;
+    border: none;
+    padding: 10px 30px;
+}
+textarea{
+    width: 350px;
+    height: 200px;
+    
+}
+input::placeholder{
+    font-size: 16px;
+    font-weight: 400;
+    color: #9F9F9F;
+}
+select{
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+}
+select option:first-child{
+    font-size: 16px;
+    font-weight: 400;
+    color: #9F9F9F;
+}
+textarea{
+    font-size: 16px;
+    padding: 20px;
+    border: none;
+}
+.contact-btn{
+    padding: 10px 70px;
+    color: white;
+    border: none;
+    background-color: #A55C30;
+}
+
+/* Styling footer section */
+
+footer{
+    background-color: #0c0c0c;
+    color: #FAFAFA;
+}
+footer .container{
+    display: flex;
+    padding-top: 60px;
+    position: relative;
+    justify-content: space-between;
+}
+.about-we{
+    width: 350px;
+}
+.foot-info{
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;  
+  padding-bottom: 10px;
+  width: 230px;
+}
+.letters{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.letters h1{
+    font-size: 24px;
+    font-weight: 600;   
+    color: #A55C30;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.letters p{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    width: 250px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.subscribe{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.subscribe input{
+    width: 220px;
+    padding-left: 20px;
+}
+.subscribe input::placeholder{
+    font-size: 16px;
+    font-weight: 400;
+    color: #9f9f9f;
+}
+.foot-btn{
+    padding: 10px 30px;
+    background-color: #A55C30;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+}
+.socials{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 26px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.socials i:hover{
+    transform: scale(1.2);
+    color: #A55C30;
+}
+.hr{
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    height: 1px;
+    background-color: white;
+}
+.contact-me h1{
+    font-size: 24px;
+    font-weight: 600;   
+    color: #A55C30;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.foot-data{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding-bottom: 20px;
 }
