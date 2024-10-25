@@ -810,4 +810,7 @@ footer .container{
         color: #9F9F9F;
         bottom: 20px;    
     }
+    .left, .right{
+        display: none;
+    }
 } 
