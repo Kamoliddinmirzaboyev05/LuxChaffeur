@@ -20,8 +20,8 @@ header{
 nav{
     position: fixed;
     width: 100%;
+    top: 0;
     background-color: white;
-    /* left: 220px; */
     z-index: 999;
 }
 nav .container{
@@ -46,7 +46,9 @@ nav .container{
 .links a:hover{
     color: #A55C30;
 }
-
+.bar{
+    display: none;
+}
 /* Styling hero section */
 
 .hero .container{
@@ -82,6 +84,9 @@ nav .container{
     top: 80px;
     right: 0;
 }
+.mobile-img{
+    display: none;
+}
 .mers{
     position: absolute;
     right: -40px;
@@ -107,7 +112,7 @@ nav .container{
     width: 90%;
 }
 .sct1-text{
-    width: 480px;
+    width: 440px;
 }
 .sct1-text h2{
     font-size: 40px;
@@ -122,6 +127,7 @@ nav .container{
     font-weight: 400;
     line-height: 24px;
     font-family: 'Nunito Sans';
+    padding-bottom: 15px;
 }
 
 /* Styling section2 */
@@ -550,3 +556,86 @@ footer .container{
     align-items: center;
     padding-bottom: 20px;
 }
+
+
+
+@media (max-width:480px){
+    .links{
+        display: none;
+    }
+    .bar{
+        display: block;
+        font-size: 32px;
+    }
+    nav .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .hero{
+        position: relative;
+        margin-top: 120px;
+        overflow: hidden;
+        background-image: url('img/mobile-img.png');
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    .hero .container{
+        overflow: hidden;
+        padding-bottom: 500px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .hero-img{
+        display: none;
+    }
+    .mers{
+        display: none;
+    }
+    
+    .hero-text{
+        gap: 30px;
+    }
+    .ver-line{
+        height: 180px;
+        top: 0;
+        left: 10px;
+        position: absolute;
+        align-items: start;
+        margin-top: 0;
+    }
+    .text{
+        width: 260px;
+    }
+    .hero-text h1{
+        top: 0px;
+        z-index: 999;
+        left: 30px;
+        position: absolute;
+        font-size: 36px;
+        line-height: 40px;
+    }
+    .section1 .container{
+        flex-wrap: wrap;
+        align-items: center;
+        padding-top: 30px;
+    } 
+    .sct1-text{
+        text-align: center;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .sct1-text p{
+        font-size: 14px;
+    }
+    .sct1-img img{
+        width: 100%;
+    }
+    .sct2-block{
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+} 
